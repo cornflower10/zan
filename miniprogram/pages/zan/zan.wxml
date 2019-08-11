@@ -1,0 +1,41 @@
+<!--miniprogram/pages/zan/zan.wxml-->
+<scroll-view scroll-y bindscrolltolower="lower">
+  <view class='bg_header item_bg'>
+    <image class='header_image' src='../../images/code-db-inc-dec.png'> </image>
+    <view class='name_view'>
+      <text class='name'>侧面</text>
+    </view>
+  </view>
+  <view class='mag_129'>
+    <view>
+      <image class='_20 header_image_item' src='../../images/code-db-inc-dec.png' mode=''></image>
+    </view>
+
+    <view class='mag_r_20 item_right'>
+      <text class='text_blue text_36'>侧面</text>
+
+      <view class='item_w'>
+        <text class='text_black text_36 mag_t_16'>dhfka</text>
+        <image class='link item_w mag_t_16  mag_t_16' src='../../images/code-db-inc-dec.png'></image>
+        <view class='mag_t_20 space_b row_flex'>
+          <view class='row_flex text_28'>
+            <text class='text_gray'>1分钟前</text>
+            <text class='text_blue mag_l_36'>删除</text>
+          </view>
+          <view class='item_choose text_blue'>..</view>
+
+        </view>
+
+        <view class='mag_t_20 _item_zan row_flex_around'>
+          <image class='zan' src='../../images/zan.png'></image>
+          <view class='row_flex zan_name' wx:for="{{zan}}">
+            <text class='text_blue'>{{item}}</text>
+            <text>{{index!=zan.length-1?'，':''}}</text>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+      <view class='line_match mag_t_20'></view>
+</scroll-view>
