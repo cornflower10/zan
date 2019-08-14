@@ -81,3 +81,14 @@ margin-left: 36rpx;
 .zan_name{
   font-size: 26rpx;
 }
+.nice_item{
+  width: 500rpx;
+}
+.nice_item_4{
+  width: 330rpx;
+}
+.item_image{
+  margin-top: 10rpx;
+  width: 160rpx;
+  height: 160rpx;
+}

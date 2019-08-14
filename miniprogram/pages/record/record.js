@@ -1,18 +1,10 @@
-// miniprogram/pages/zan/zan.js
+// miniprogram/pages/record/record.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userIconUrl:"",
-    usserName:"",
-    desc:"",
-    type:0,//1大单图，2多图，3链接,4:4张图
-    urls: ["http://img1.imgtn.bdimg.com/it/u=2075088016,198327081&fm=26&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=2075088016,198327081&fm=26&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=2075088016,198327081&fm=26&gp=0.jpg",
-      "http://img1.imgtn.bdimg.com/it/u=2075088016,198327081&fm=26&gp=0.jpg",],
-    url:"",
-    zan: ['fjefj', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk', 'dfhsk']
 
   },
 
@@ -20,11 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-    var lengthTemp = that.data.urls.length
-     this.setData({
-       type: lengthTemp
-     })
+
   },
 
   /**

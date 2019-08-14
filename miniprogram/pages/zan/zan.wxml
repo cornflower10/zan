@@ -16,7 +16,20 @@
 
       <view class='item_w'>
         <text class='text_black text_36 mag_t_16'>dhfka</text>
-        <image class='link item_w mag_t_16  mag_t_16' src='../../images/code-db-inc-dec.png'></image>
+        <view wx:if="{{type==3}}">
+          <image class='link item_w mag_t_16  mag_t_16' src='../../images/code-db-inc-dec.png'></image>
+        </view>
+        <view wx:if="{{type==2}}">
+          <view class='row_flex_around nice_item'>
+            <image wx:for="{{urls}}" class='item_image' src='{{item}}'></image>
+          </view>
+        </view>
+   <view wx:if="{{type==4}}">
+          <view class='row_flex_around nice_item_4'>
+            <image wx:for="{{urls}}" class='item_image' src='{{item}}'></image>
+          </view>
+        </view>
+
         <view class='mag_t_20 space_b row_flex'>
           <view class='row_flex text_28'>
             <text class='text_gray'>1分钟前</text>
@@ -26,7 +39,7 @@
 
         </view>
 
-        <view class='mag_t_20 _item_zan row_flex_around'>
+        <view class='mag_t_20 _item_zan row_flex_wrap'>
           <image class='zan' src='../../images/zan.png'></image>
           <view class='row_flex zan_name' wx:for="{{zan}}">
             <text class='text_blue'>{{item}}</text>
@@ -37,5 +50,5 @@
       </view>
     </view>
   </view>
-      <view class='line_match mag_t_20'></view>
+  <view class='line_match mag_t_20'></view>
 </scroll-view>
